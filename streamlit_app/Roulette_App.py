@@ -157,7 +157,7 @@ with st.sidebar:
     st.markdown("### 📊 Players")
     st.markdown("""
     - **RandomBot** - Random color each round with starting bet (\$10)
-    - **GreenHunter** - Always bets starting bet (\$10) on green (0)
+    - **GreenHunter** - Always bets starting bet (\$10) on green which is number (0)
     - **MartyRed** - Martingale* on red
     - **MartyBlack** - Martingale* on black
 
