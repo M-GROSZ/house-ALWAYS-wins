@@ -156,10 +156,12 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### 📊 Players")
     st.markdown("""
-    - **RandomBot** - Random color each round
-    - **GreenHunter** - Always bets on green (0)
-    - **MartyRed** - Martingale on red
-    - **MartyBlack** - Martingale on black
+    - **RandomBot** - Random color each round with starting bet (\$10)
+    - **GreenHunter** - Always bets starting bet (\$10) on green (0)
+    - **MartyRed** - Martingale* on red
+    - **MartyBlack** - Martingale* on black
+
+    Martingale - double your bet after each loss, reset after a win.
     """)
 
 run_button = st.button("🎲 Run Simulation", type="primary", use_container_width=True)
