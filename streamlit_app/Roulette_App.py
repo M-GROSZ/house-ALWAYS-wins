@@ -143,14 +143,14 @@ st.set_page_config(page_title="Roulette Simulator", page_icon="🎰", layout="wi
 st.title("🎰 European Roulette Simulator")
 st.markdown("""
 Compare different betting strategies in a realistic roulette simulation.
-Each player starts with $1000 and bets $10 as starting bet.
+Each player starts with **$1000** and bets **$10** as starting bet.
 """)
 
 # Sidebar configuration
 with st.sidebar:
     st.header("⚙️ Simulation Settings")
     num_rounds = st.slider("Number of rounds", 10, 1000, 100, 10)
-    update_freq = st.slider("Chart update frequency", 1, 20, 5, 1, 
+    update_freq = st.slider("Chart update frequency", 1, 20, 10, 1, 
                            help="Update chart every N rounds. Higher = faster, lower = smoother")
     
     st.markdown("---")
