@@ -170,7 +170,7 @@ if run_button:
         {
             'name': 'RandomBot',
             'strategy': random_color_strategy,
-            'color': 'blue',
+            'color': '#a807b0',
             'balance': 1000,
             'base_bet': 10,
             'last_result': 'start'
@@ -197,7 +197,7 @@ if run_button:
         {
             'name': 'MartyBlack',
             'strategy': martingale_color_strategy,
-            'color': 'black',
+            'color': '#0c466e',
             'balance': 1000,
             'base_bet': 10,
             'current_bet': 10,
