@@ -143,7 +143,7 @@ st.set_page_config(page_title="Roulette Simulator", page_icon="🎰", layout="wi
 st.title("🎰 European Roulette Simulator")
 st.markdown("""
 Compare different betting strategies in a realistic roulette simulation.
-Each player starts with **$1000** and bets **$10** as starting bet.
+Each player starts with ($1000) and bets ($10) as starting bet.
 """)
 
 # Sidebar configuration
