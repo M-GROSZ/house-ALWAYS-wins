@@ -303,23 +303,27 @@ if run_button:
             win_rate = (wins / rounds_played * 100) if rounds_played else 0
             profit = player['balance'] - 1000
             last_round = player.get('last_active_round', 'active until end')
-            
+    
+           
             st.markdown(f"### 🎲 {player['name']}")
-            
+    
+           
             if profit > 0:
-                delta_text = f"📈 +${abs(profit):.2f}"
+                emoji = "📈"
             elif profit < 0:
-                delta_text = f"📉 -${abs(profit):.2f}"
+                emoji = "📉"
             else:
-                delta_text = f"➡️ $0.00"
-            
-            st.metric("Final Balance", 
-                      f"${player['balance']:.2f}", 
-                      delta=delta_text)
-            
+                emoji = "➡️"
+    
+          
+            st.metric(
+                label="Final Balance",
+                value=f"{emoji} ${player['balance']:.2f}",
+                delta=profit  
+            )
+    
             st.write(f"**Rounds played:** {rounds_played}")
             st.write(f"**Wins:** {wins} ({win_rate:.1f}%)")
-            
+    
             if 'Marty' in player['name']:
                 st.write(f"**Stopped at:** Round {last_round}")
-            
