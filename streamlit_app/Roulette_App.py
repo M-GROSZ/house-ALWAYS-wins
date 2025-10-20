@@ -241,7 +241,7 @@ if run_button:
                 type='line',
                 x0=0, x1=num_rounds,
                 y0=0, y1=0,
-                line=dict(color='red', width=2, dash='dash'),
+                line=dict(color='#640000', width=2, dash='dash'),
             ),
             # Starting balance line at $1000
             dict(
